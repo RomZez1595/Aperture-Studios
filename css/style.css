@@ -1,0 +1,713 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    background: #000;
+}
+
+.wrapper{
+    width: 1300px;
+    margin: 0 auto;
+}
+
+
+.h3{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+}
+
+
+:root {
+    scroll-behavior: smooth;
+}
+
+
+/* Header Style Start */
+
+.header{
+    position: fixed;
+    width: 100%;
+    background: #181818;
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+
+.header-wrapper{
+    width: 1160px;
+    margin: 0 auto;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-list{
+    display: flex;
+    align-items: center;
+}
+
+.header-item{
+    padding-right: 32px;
+}
+
+.header-item a::before{
+    content: "";
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #dddddd;
+    transition: 0.2s;
+}
+
+.header-item a:hover:before {
+    width: 50%;
+}
+
+
+.header-item-one{
+    padding-right: 56px;
+}
+
+.header-link{
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+
+.header-link:hover{
+    color: #dbdbdb;
+    transition: 0.3s;  
+}
+
+.get-template{
+    width: 155px;
+    height: 42px;
+    border-radius: 14px;
+}
+
+.get-template:hover{
+    background: rgb(194, 192, 192);
+    color: rgb(255, 255, 255);
+    transition: 0.6s;
+}
+
+.get-template-link{
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    color: #000000;
+}
+
+.get-template-link:hover{
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+/* Header Style End */
+
+
+/* Intro Style Start */
+
+.intro{
+    height: 716px;
+    background: url(../img/Jpg/intro-photo.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.intro-p{
+    text-align: center;
+    padding-top: 412px;
+}
+
+.intro-title-h3{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #C0C0C0;
+}
+
+.intro-title-h1{
+    font-size: 54px;
+    line-height: 59px;
+    color: #FFFFFF;
+    padding-bottom: 18px;
+}
+
+.intro-subtitle{
+    font-size: 14px;
+    line-height: 20px;
+    color: #C0C0C0;
+    padding-bottom: 15px;
+}
+
+.characteristic{
+    padding-right: 25px;
+    padding-bottom: 160px;
+}
+
+.intro-characteristic{
+    padding-right: 15px;
+}
+
+.characteristic, .intro-characteristic{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.intro-characteristic-ico{
+    padding-right: 8px;
+}
+
+
+.intro-characteristic-p{
+    font-size: 12px;
+    line-height: 12px;
+    color: #FFFFFF;
+}
+
+/* Intro Style End */
+
+
+
+/* Job Style Start */
+
+.job{
+    padding-bottom: 100px;
+    scroll-behavior: smooth;
+}
+
+.job-title{
+    font-size: 40px;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 15px;
+}
+
+.job-subtitle{
+    font-size: 23px;
+    line-height: 30px;
+    text-align: center;
+    color: #C0C0C0;
+    padding-bottom: 40px;
+}
+
+.job-card-product, .job-card-architecture{
+    width: 576px;
+    height: 600px;
+    padding-left: 30px;
+    padding-top: 421px;
+}
+.job-card-wildlife, .job-card-drone{
+    width: 576px;
+    height: 600px;
+    padding-left: 30px;
+    padding-top: 401px;
+}
+
+.job-card-product{
+    background: url(../img/Jpg/product-photography.jpg) no-repeat;
+}
+
+.job-card-architecture{
+    background: url(../img/Jpg/architecture-photography.jpg) no-repeat;
+}
+
+.job-card-drone{
+    background: url(../img/Jpg/drone-photography.jpg) no-repeat;
+}
+.job-card-wildlife{
+    background: url(../img/Jpg/wildlife-photography.jpg) no-repeat;
+}
+
+.job-card-title{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+}
+
+.job-cards{
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.job-card{
+    display: flex;
+    padding-right: 16px;
+}
+
+.job-card-subtitle{
+    font-size: 14px;
+    line-height: 20px;
+    color: #C0C0C0;
+    padding-bottom: 20px;
+}
+
+.job-card-button{
+    width: 143px;
+    height: 42px;
+    background: #FFFFFF;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.job-card-button:hover{
+    background: rgb(184, 184, 184);
+    transition: 0.6s;
+}
+
+.hexagon{
+    padding-left: 6px;
+}
+
+.job-card-link{
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    color: #000000;
+    padding-left: 5px;
+}
+
+.job-card-link:hover{
+    color: #ffffff;
+    transition: 0.3s;  
+}
+
+
+
+/* Job Style End */
+
+
+
+/* Japan Style Start */
+
+.japan{
+    height: 600px;
+    background: url(../img/Jpg/japan.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.japan-info{
+    align-items: center;
+    padding-top: 260px;
+    padding-left: 940px;
+    padding-right: 62px;
+}
+
+.japan-title{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF; 
+    padding-bottom: 1px;
+    display: flex;
+}
+
+.japan-subtitle{
+    font-size: 14px;
+    line-height: 20px;
+    color: #C0C0C0;
+
+}
+.japan-characteristic{
+    padding-top: 200px;
+    padding-right: 25px;
+    padding-bottom: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+
+/* Japan Style End */
+
+
+
+/* Tools Style Start */
+
+.tools{
+    height: 540px;
+    background: #000;
+}
+
+.tools-card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.tools-left{
+    padding-left: 50px;
+    padding-top: 40px;
+}
+
+.tools-title-h4{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #C0C0C0;
+    padding-bottom: 6px;
+}
+
+.tools-title{
+    font-size: 28px;
+    line-height: 32px;
+    color: #FFFFFF;
+    padding-bottom: 15px;
+}
+
+.tools-subtitle{
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+}
+
+.tools-card-button{
+    width: 152px;
+    height: 42px;
+    background: #FFFFFF;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.tools-card-button:hover{
+    background: rgb(184, 184, 184);
+    transition: 0.6s;
+}
+
+.tools-card-link{
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    color: #000000;
+    padding-left: 5px;
+}
+
+.tools-card-link:hover{
+    color: #ffffff;
+    transition: 0.3s;  
+}
+
+.tools-characteristic{
+    height: 540px;
+    background: url(../img/Jpg/tools.jpg) no-repeat;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.characteristic-tools{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-top: 483px;
+    padding-right: 15px;
+}
+
+/* Tools Style End */
+
+
+
+/* Costa Rica Style Start */
+
+.costa-rica{
+    height: 600px;
+    background: url(../img/Jpg/costa-rica.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/* Costa Rica Style End */
+
+
+
+/* Clients Style Start  */
+
+.clients{
+    height: 500px;
+    background: #000;
+}
+
+.clients-title{
+    font-size: 40px;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 113px;
+    padding-bottom: 15px;
+}
+
+.clients-subtitle{
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #C0C0C0;
+    padding-bottom: 80px;
+}
+
+.clients-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Clients Style End */
+
+
+
+/* Nepal Style Start */
+
+
+.nepal{
+    height: 600px;
+    background: url(../img/Jpg/nepal.jpg) no-repeat center;
+    background-size: cover;
+    padding-bottom: 113px;
+}
+
+/* Nepal Style End */
+
+
+
+/* Suggestion Style Start */
+
+.suggestion-title{
+    font-size: 40px;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 113px;
+    padding-bottom: 15px;
+}
+
+.suggestion-subtitle{
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #C0C0C0;
+    padding-bottom: 13px;
+}
+
+.suggestion-button{
+    width: 154px;
+    height: 42px;
+    background: #FFFFFF;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.suggestion-button:hover{
+    background: rgb(184, 184, 184);
+    transition: 0.6s;
+}
+
+
+/* Suggestion Style End */
+
+
+
+/* Footer Style Start */
+
+.footer{
+    padding-top: 200px;
+}
+
+.footer-wrapper{
+    width: 1166px;
+    margin: 0 auto;  
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-wrapper-top{
+    width: 1166px;
+    margin: 0 auto;  
+}
+
+.footer-logo-subtitle{
+    padding-top: 20px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #C0C0C0;
+}
+
+.footer-title{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #C0C0C0;
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 36px;
+}
+
+.footer-list{
+    padding-right: 60px;
+}
+
+.footer-item{
+    padding-bottom: 10px;
+}
+.footer-link{
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.footer-line{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 36px;
+}
+
+.subscribe{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.subscribe-title{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+}
+
+.subscribe-subtitle{
+    font-size: 13px;
+    line-height: 20px;
+    color: #C0C0C0;
+    padding-bottom: 36px;
+}
+
+.footer-input{
+    width: 458px;
+    height: 52px;
+    background: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+.footer-input-text{
+    border-radius: 8px;
+    font-size: 18px;
+    padding-left: 8px;
+    width: 340px;
+    padding-right: 20px;
+}
+
+.footer-imput-submit{
+    position: relative;
+    height: 40px;
+    width: 100px;
+    background: #000;
+    font-size: 16px;
+    border-radius: 8px; 
+}
+
+.footer-imput-link{
+    color: #ffffff;
+}
+
+.footer-imput-submit:hover{
+    background: rgb(27, 27, 27);
+    transition: 0.4s;
+}
+
+.footer-line-bottom{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 56px;
+}
+
+.produced-footer{
+    font-size: 14px;
+    line-height: 20px;
+    color: #C0C0C0;
+    padding-bottom: 40px;
+}
+
+.footer-end{
+    display: flex;
+    justify-content: space-between;
+}
+
+.twitter-ico{
+    padding-right: 20px;
+}
+
+.instagram-ico{
+    padding-right: 26px;
+}
+
+/* Footer Style End */
